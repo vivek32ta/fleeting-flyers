@@ -8,6 +8,10 @@ body{
     color:rgb(204 0 0)
 }
 
+a {
+    color: black !important;
+}
+
 .container {
     display: flex;
     justify-content: center;
