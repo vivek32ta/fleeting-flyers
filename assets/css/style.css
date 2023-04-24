@@ -1,0 +1,114 @@
+body{
+    background-image: url('../images/background.jpg');
+    background-repeat: repeat;
+    background-size: 8%;
+}
+
+.text-color-red {
+    color:rgb(204 0 0)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+.error{
+    font-size: 0.8rem;
+}
+
+.registration-form{
+	padding: 50px 0;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    min-width: 310px;
+    min-height: 320px;
+    margin: auto;
+    padding: 50px 70px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgb(204 0 0 / 25%);
+}
+
+.verify {
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: rgb(204,0,0);
+    border: none;
+    color: white;
+    margin-top: 20px;
+
+    /** Offset the Position **/
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+  
+    /** 3D Block Effect **/
+    box-shadow: 0 6px 0 0 #212529;
+  
+    /** Make it look pretty **/
+    display: block;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    opacity: 0.9;
+  }
+  
+  .verify:active {
+    /** Remove 3D Block Effect on Click **/
+    box-shadow: none;
+    top: 6px;
+    margin-bottom: 0;
+  }
+  .verify:active,
+.verify:focus {
+  /** Remove Chrome's Ugly Yellow Outline **/
+  outline: 0;
+}
+
+@media (max-width: 576px) {
+    body{
+        background-size: 40%;
+    }
+
+    .registration-form{
+        padding: 50px 20px;
+    }
+
+    .registration-form form{
+        padding: 40px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .container {
+        height: 200vw;
+    }
+}
