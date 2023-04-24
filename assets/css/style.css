@@ -24,9 +24,6 @@ body{
     font-size: 0.8rem;
     padding-bottom: 10px;
 }
-.error{
-    font-size: 0.8rem;
-}
 
 .registration-form{
 	padding: 50px 0;
@@ -44,10 +41,17 @@ body{
 }
 
 .registration-form .item{
-	border-radius: 20px;
     margin-bottom: 25px;
+}
+.registration-form .item .item-input{
+	border-radius: 20px;
     padding: 10px 20px;
 }
+.registration-form .item .error{
+    padding: 10px 20px;
+}
+
+
 .form-control:focus {
     box-shadow: 0 0 0 0.2rem rgb(204 0 0 / 25%);
 }
@@ -87,6 +91,10 @@ body{
 .verify:focus {
   /** Remove Chrome's Ugly Yellow Outline **/
   outline: 0;
+}
+
+.made-with {
+    font-size: 1rem;
 }
 
 @media (max-width: 576px) {
